@@ -6,7 +6,7 @@ const Projects = () => {
       title: "Bound Protocol Web App",
       description: "A modern web application interface built to streamline interactions and workflows within the Bound Protocol ecosystem.",
       image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=800",
-      tags: ["JavaScript", "React", "TailwindCSS", "Bootstrap", "HTML"],
+      tags: ["JavaScript", "React", "TailwindCSS", "Bootstrap"],
       github: "https://github.com/Steadydrumz/Bound-by-steady",
       live: "boundprotocol.com"
     },
@@ -14,7 +14,7 @@ const Projects = () => {
       title: "Dev Help AI Chatbot",
       description: "Real-time collaborative task management application with drag-and-drop functionality.",
       image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=2055&auto=format&fit=crop",
-      tags: ["TypeScript", "Next.js", "React", "HTML", "TailwindCSS"],
+      tags: ["TypeScript", "Next.js", "React", "TailwindCSS"],
       github: "#",
       live: "#"
     },
