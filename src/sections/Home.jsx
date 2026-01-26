@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Hero = () => {
+const Home = () => {
   return (
-    <section className="min-h-screen bg-[#f8faff] flex flex-col items-center justify-center px-6 pt-20 overflow-hidden">
+    <section id="home" className="min-h-screen bg-[#f8faff] flex flex-col items-center justify-center px-6 pt-20 overflow-hidden">
       <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
         
         {/* Hello Text - Animated */}
@@ -86,4 +86,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Home;
