@@ -23,7 +23,23 @@
   from { opacity: 0; }
   to { opacity: 1; }
 }
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
 
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-slide-in-left { animation: slideInLeft 0.8s ease-out forwards; }
+.animate-slide-in-right { animation: slideInRight 0.8s ease-out forwards; }
+
+/* Ensure the Section Heading appears properly */
+.animate-on-scroll {
+  animation: fadeIn 1s ease-out forwards;
+}
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

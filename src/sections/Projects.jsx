@@ -10,7 +10,7 @@ const Projects = () => {
       image: BoundProtocolImage,
       tags: ["JavaScript", "React", "TailwindCSS", "Bootstrap"],
       github: "https://github.com/Steadydrumz/Bound-by-steady",
-      live: "boundprotocol.com"
+      live: "#"
     },
     {
       title: "Dev Help AI Chatbot",
