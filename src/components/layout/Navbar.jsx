@@ -104,8 +104,8 @@ const Navbar = () => {
           from { opacity: 0; transform: translateY(15px); }
           to { opacity: 1; transform: translateY(0); }
         }
-        .animate-slide-in-right { animation: slideInRight 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
-        .animate-fade-in-up { animation: fadeInUp 0.5s ease-out forwards; opacity: 0; }
+        .animate-slide-in-right { animation: slideInRight 0.2s cubic-bezier(0.16, 1, 0.3, 1); }
+        .animate-fade-in-up { animation: fadeInUp 0.2s ease-out forwards; opacity: 0; }
       `}} />
     </nav>
   );
