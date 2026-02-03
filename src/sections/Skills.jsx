@@ -11,6 +11,18 @@ const Skills = () => {
       skills: ["React", "TypeScript", "Next.js", "Tailwind CSS"]
     },
     {
+      title: "UI/UX Design",
+      icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+        <path d="M8 8s2-2 4-2 4 2 4 2"></path>
+        <circle cx="12" cy="13" r="3"></circle>
+      </svg>
+  ),
+      color: "bg-orange-500",
+      skills: ["Figma", "Adobe XD", "Sketch", "Prototyping"]
+    },
+    {
       title: "Responsive Design",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>
