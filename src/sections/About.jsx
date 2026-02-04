@@ -1,4 +1,6 @@
 import React from 'react';
+// 1. Import the image here
+import abtImage from './Abt me.png';
 
 const About = () => {
   const stats = [
@@ -25,7 +27,8 @@ const About = () => {
             <div className="absolute -inset-2 md:-inset-4 bg-gradient-to-tr from-[#4f46e5]/10 to-[#a855f7]/10 rounded-[1.5rem] md:rounded-[2rem] blur-2xl opacity-70"></div>
             <div className="relative rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-xl md:shadow-2xl">
               <img 
-                src="./Abt me.png" 
+                // 2. Use the imported variable here
+                src={abtImage} 
                 alt="Workspace" 
                 className="w-full h-[300px] md:h-[500px] object-cover hover:scale-105 transition-transform duration-700"
               />
@@ -55,7 +58,6 @@ const About = () => {
             <div className="grid grid-cols-3 gap-4 mt-8 pt-8 border-t border-slate-100">
               {stats.map((stat, index) => (
                 <div key={index} className="flex flex-col items-center lg:items-center text-center"> 
-                  {/* items-center ensures the vertical stack is centered */}
                   <span className="text-2xl md:text-2xl font-bold text-[#4f46e5]">
                     {stat.value}
                   </span>
@@ -69,7 +71,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* Internal Animation Styles */}
       <style dangerouslySetInnerHTML={{ __html: `
         @keyframes slideInLeft {
           from { opacity: 0; transform: translateX(-40px); }
