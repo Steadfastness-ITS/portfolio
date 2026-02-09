@@ -1,4 +1,5 @@
 import React from 'react';
+import KRYPTOImage from './UI image.png';
 import DefInsightImage from './Def Insight.png'; 
 import DevHelpImage from './Dev.jpeg'; 
 import BoundProtocolImage from './Bound Protocol.png';
@@ -27,6 +28,14 @@ const Projects = () => {
       tags: ["React", "JavaScript", "HTML", "TailwindCSS"],
       github: "https://github.com/Steadfastness-ITS/1st-Job",
       live: "https://www.shephard.projectupdates.co.uk/news/"
+    },
+    {
+      title: "KRYPTO Website Desktop UI",
+      description: "A sleek, modern desktop UI design for KRYPTO company, featuring intuitive navigation, bold visuals, and a user-friendly layout tailored for the KRYPTO company's website.",
+      image: KRYPTOImage, 
+      tags: ["Figma", "Set-up Materials", "Prototyping"],
+      github: "#",
+      live: "https://www.figma.com/design/5PYRFiLtVxx7UcNYttwUW5/KRYPTO---My-first-Figma-Design?node-id=0-1&t=34MBWGl2yEQaH1Ue-1"
     }
   ];
 
