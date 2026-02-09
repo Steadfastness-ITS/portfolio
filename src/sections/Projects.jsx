@@ -34,7 +34,7 @@ const Projects = () => {
       description: "A sleek, modern desktop UI design for KRYPTO company, featuring intuitive navigation, bold visuals, and a user-friendly layout tailored for the KRYPTO company's website.",
       image: KRYPTOImage, 
       tags: ["Figma", "Set-up Materials", "Prototyping"],
-      github: "#",
+      github: "https://github.com/Steadfastness-ITS/KRYPTO-UI",
       live: "https://www.figma.com/design/5PYRFiLtVxx7UcNYttwUW5/KRYPTO---My-first-Figma-Design?node-id=0-1&t=34MBWGl2yEQaH1Ue-1"
     }
   ];
