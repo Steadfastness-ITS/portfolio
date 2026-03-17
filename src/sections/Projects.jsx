@@ -3,6 +3,8 @@ import KRYPTOImage from './UI image.png';
 import DefInsightImage from './Def Insight.png'; 
 import DevHelpImage from './Dev.jpeg'; 
 import BoundProtocolImage from './Bound Protocol.png';
+import EroditeImage from './UI Erodite.png'
+
 const Projects = () => {
   const projectList = [
     {
@@ -36,6 +38,14 @@ const Projects = () => {
       tags: ["Figma", "Set-up Materials", "Prototyping"],
       github: "https://github.com/Steadfastness-ITS/KRYPTO-UI",
       live: "https://www.figma.com/design/5PYRFiLtVxx7UcNYttwUW5/KRYPTO---My-first-Figma-Design?node-id=0-1&t=34MBWGl2yEQaH1Ue-1"
+    },
+    {
+      title: "Erudite Responsive Landing Page",
+      description: "A high-performance, responsive landing page featuring interactive Framer Motion animations and a fluid, mobile-first design optimized for seamless deployment.",
+      image: EroditeImage, 
+      tags: ["Next.js", "TypeScript", "Bootstrap", "TailwindCSS"],
+      github: "https://github.com/Steadfastness-ITS/erudite",
+      live: "https://erudite-company.vercel.app/"
     }
   ];
 

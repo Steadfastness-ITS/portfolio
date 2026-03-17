@@ -8,7 +8,7 @@ const Skills = () => {
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
       ),
       color: "bg-blue-500",
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+      skills: ["React.js", "TypeScript", "Next.js", "Bootstrap", "Tailwind CSS"]
     },
     {
       title: "UI/UX Design",
@@ -20,7 +20,7 @@ const Skills = () => {
       </svg>
   ),
       color: "bg-orange-500",
-      skills: ["Figma", "Adobe XD", "Sketch", "Prototyping"]
+      skills: ["Figma", "Adobe XD", "Sketch", "Wireframing", "Prototyping"]
     },
     {
       title: "Responsive Design",
@@ -28,7 +28,7 @@ const Skills = () => {
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>
       ),
       color: "bg-purple-500",
-      skills: ["Desktop view", "Mobile view", "Accessibility", "Cross-Browser",]
+      skills: ["Fluid Typography", "Accessibility", "Cross-Browser", "Container Queries", "Dynamic Viewport Units" ]
     },
     {
       title: "Performance",
@@ -44,7 +44,7 @@ const Skills = () => {
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"></circle><line x1="3" x2="9" y1="12" y2="12"></line><line x1="15" x2="21" y1="12" y2="12"></line></svg>
       ),
       color: "bg-red-500",
-      skills: ["Git", "GitHub", "GitLab", "Bitbucket",]
+      skills: ["Git", "GitHub", "GitLab", "Vercel", "Netlify"]
     }
   ];
 
