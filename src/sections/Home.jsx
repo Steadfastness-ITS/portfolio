@@ -13,7 +13,7 @@ const Home = () => {
         {/* Name - Gradient with Responsive Text Size */}
         <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold mb-6 tracking-tight leading-tight animate-slide-up">
           <span className="bg-gradient-to-r from-[#4f46e5] via-[#7c3aed] to-[#a855f7] bg-clip-text text-transparent">
-            Steadfastness Efosa Divine-Favour
+            Steadfastness Divine-Favour Efosa
           </span>
         </h1>
 
