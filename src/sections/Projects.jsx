@@ -55,7 +55,7 @@ const Projects = () => {
         
         {/* Section Heading */}
         <div className="flex flex-col items-center mb-16 text-center">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">Works</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-4">Featured Projects</h2>
           <div className="w-20 h-1.5 bg-gradient-to-r from-[#4f46e5] to-[#a855f7] rounded-full mb-6"></div>
           <p className="text-slate-500 max-w-2xl text-lg">
             A collection of my recent works showcasing my skills & passion for design and development.
