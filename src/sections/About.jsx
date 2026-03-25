@@ -39,8 +39,8 @@ const About = () => {
           <div className="flex flex-col gap-5 md:gap-6 animate-slide-in-right text-center lg:text-left">
             <p className="text-base md:text-lg text-slate-600 leading-relaxed">
               I'm a passionate developer with a keen eye for design and a dedicated focus on 
-              creating seamless user experiences. With several years of hands-on experience 
-              in web development, I specialize in building modern, scalable applications.
+              creating seamless user experiences. With extensive experience 
+              in web development and UI/UX designs, I specialize in building modern, scalable web applications.
             </p>
             
             <p className="text-base md:text-lg text-slate-600 leading-relaxed hidden sm:block">
