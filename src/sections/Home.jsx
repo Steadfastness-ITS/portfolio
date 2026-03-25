@@ -30,8 +30,8 @@ const Home = () => {
 
         {/* Buttons - Stacked on Mobile, Row on Desktop */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 w-full sm:w-auto animate-slide-up delay-300">
-          {/* LOGIC ADDED: Link to #projects */}
-          <a href="#projects" className="text-center w-full sm:w-auto px-10 py-3.5 bg-gradient-to-r from-[#3b82f6] to-[#a855f7] hover:from-[#2563eb] hover:to-[#7e22ce] text-white font-bold rounded-xl transition-all shadow-lg shadow-purple-100 active:scale-95">
+          {/* LOGIC ADDED: Link to #works */}
+          <a href="#works" className="text-center w-full sm:w-auto px-10 py-3.5 bg-gradient-to-r from-[#3b82f6] to-[#a855f7] hover:from-[#2563eb] hover:to-[#7e22ce] text-white font-bold rounded-xl transition-all shadow-lg shadow-purple-100 active:scale-95">
             View My Works
           </a>
           

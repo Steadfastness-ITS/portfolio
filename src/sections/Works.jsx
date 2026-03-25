@@ -5,7 +5,7 @@ import DevHelpImage from './Dev.jpeg';
 import BoundProtocolImage from './Bound Protocol.png';
 import EroditeImage from './UI Erodite.png'
 
-const Projects = () => {
+const Works = () => {
   const projectList = [
     {
       title: "Bound Protocol Web App",
@@ -55,7 +55,7 @@ const Projects = () => {
         
         {/* Section Heading */}
         <div className="flex flex-col items-center mb-16 text-center">
-          <h2 className="text-4xl font-bold text-slate-900 mb-4">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-slate-900 mb-4">Works</h2>
           <div className="w-20 h-1.5 bg-gradient-to-r from-[#4f46e5] to-[#a855f7] rounded-full mb-6"></div>
           <p className="text-slate-500 max-w-2xl text-lg">
             A selection of my recent work showcasing my skills and passion for development.
@@ -136,4 +136,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Works;
