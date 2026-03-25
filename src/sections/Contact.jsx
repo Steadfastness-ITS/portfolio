@@ -116,7 +116,7 @@ const Contact = () => {
       <div className="space-y-6">
         <h3 className="text-lg font-bold text-white tracking-wider">Quick Links</h3>
         <ul className="space-y-3 text-slate-400">
-          {["Home", "About", "Skills", "Works", "Contact"].map(link => (
+          {["Home", "About", "Skills", "Projects", "Contact"].map(link => (
             <li key={link}>
               <a href={`#${link.toLowerCase()}`} className="hover:text-white transition-colors flex items-center gap-2 group">
                 <div className="w-0 h-[2px] bg-blue-500 group-hover:w-3 transition-all"></div>

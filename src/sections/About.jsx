@@ -1,5 +1,4 @@
 import React from 'react';
-// 1. Import the image here
 import abtImage from './Abt me.png';
 
 const About = () => {
