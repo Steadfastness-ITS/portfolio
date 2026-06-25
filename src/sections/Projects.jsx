@@ -4,6 +4,7 @@ import DefInsightImage from './Def Insight.png';
 import DevHelpImage from './Dev.jpeg'; 
 import BoundProtocolImage from './Bound Protocol.png';
 import EroditeImage from './UI Erodite.png'
+import TemsImage from './Tems.png'
 
 const Projects = () => {
   const projectList = [
@@ -13,15 +14,23 @@ const Projects = () => {
       image: BoundProtocolImage,
       tags: ["JavaScript", "React", "TailwindCSS", "Bootstrap"],
       github: "https://github.com/Steadfastness-ITS/Bound-Protocol",
-      live: "#"
+      live: "https://bound-protocol-three.vercel.app/"
     },
     {
-      title: "Dev Help AI Chatbot",
-      description: "A versatile, AI-powered assistant designed to streamline developer workflows by providing real-time technical guidance and solving complex coding challenges.",
-      image: DevHelpImage, 
-      tags: ["TypeScript", "Next.js", "React", "TailwindCSS"],
-      github: "#",
-      live: "#"
+      title: "Tems Portfoio Website",
+      description: "A visually engaging and fully responsive portfolio website for Nigerian music artist Tems, showcasing her music, achievements, and latest projects with a modern design.", 
+      image: TemsImage, 
+      tags: ["React", "JavaScript", "Bootstrap", "TailwindCSS"],
+      github: "https://github.com/Steadfastness-ITS/Tems-portfolio",
+      live: "https://tems-portfolio-website.vercel.app/"
+    },
+    {
+      title: "Erudite Responsive Landing Page",
+      description: "A high-performance, responsive landing page featuring interactive Framer Motion animations and a fluid, mobile-first design optimized for seamless deployment.",
+      image: EroditeImage, 
+      tags: ["Next.js", "TypeScript", "Bootstrap", "TailwindCSS"],
+      github: "https://github.com/Steadfastness-ITS/erudite",
+      live: "https://erudite-company.vercel.app/"
     },
     {
       title: "Defence Insight Navbar",
@@ -40,13 +49,13 @@ const Projects = () => {
       live: "https://www.figma.com/design/5PYRFiLtVxx7UcNYttwUW5/KRYPTO---My-first-Figma-Design?node-id=0-1&t=34MBWGl2yEQaH1Ue-1"
     },
     {
-      title: "Erudite Responsive Landing Page",
-      description: "A high-performance, responsive landing page featuring interactive Framer Motion animations and a fluid, mobile-first design optimized for seamless deployment.",
-      image: EroditeImage, 
-      tags: ["Next.js", "TypeScript", "Bootstrap", "TailwindCSS"],
-      github: "https://github.com/Steadfastness-ITS/erudite",
-      live: "https://erudite-company.vercel.app/"
-    }
+      title: "De-Burger Company UI Design",
+      description: "A modern, responsive UI design for the De-Burger company, focusing on user experience and visual appeal.",
+      image: De-BurgerImage, 
+      tags: ["Figma", "UI/UX Design Materials", "Wireframing", "Prototyping"],
+      github: "#",
+      live: "https://www.figma.com/proto/n1GT3dqOfETDjN5Z8vqxjy/De-Burger-App?node-id=1-173&p=f&t=ras36ne21MnAZAJ6-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A667"
+    },
   ];
 
   return (
