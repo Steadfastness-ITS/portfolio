@@ -3,8 +3,9 @@ import KRYPTOImage from './UI image.png';
 import DefInsightImage from './Def Insight.png'; 
 import DevHelpImage from './Dev.jpeg'; 
 import BoundProtocolImage from './Bound Protocol.png';
-import EroditeImage from './UI Erodite.png'
-import TemsImage from './Tems.png'
+import EroditeImage from './UI Erodite.png';
+import TemsImage from './Tems.png';
+import DeBurgerImage from './De-Burger.png'
 
 const Projects = () => {
   const projectList = [
@@ -41,7 +42,7 @@ const Projects = () => {
       live: "https://www.shephard.projectupdates.co.uk/news/"
     },
     {
-      title: "KRYPTO Website Desktop UI",
+      title: "KRYPTO Website UI Design",
       description: "A sleek, modern desktop UI design for KRYPTO company, featuring intuitive navigation, bold visuals, and a user-friendly layout tailored for the KRYPTO company's website.",
       image: KRYPTOImage, 
       tags: ["Figma", "Set-up Materials", "Prototyping"],
@@ -49,10 +50,10 @@ const Projects = () => {
       live: "https://www.figma.com/design/5PYRFiLtVxx7UcNYttwUW5/KRYPTO---My-first-Figma-Design?node-id=0-1&t=34MBWGl2yEQaH1Ue-1"
     },
     {
-      title: "De-Burger Company UI Design",
-      description: "A modern, responsive UI design for the De-Burger company, focusing on user experience and visual appeal.",
-      image: De-BurgerImage, 
-      tags: ["Figma", "UI/UX Design Materials", "Wireframing", "Prototyping"],
+      title: "De-Burger App UI/UX Design",
+      description: "A modern mobile app UI/UX design for De-Burger, with a focus on intuitive user flows, and interactive prototyping. The design delivers a smooth food ordering experience.",
+      image: DeBurgerImage, 
+      tags: ["Figma", "Design Materials", "Prototyping"],
       github: "#",
       live: "https://www.figma.com/proto/n1GT3dqOfETDjN5Z8vqxjy/De-Burger-App?node-id=1-173&p=f&t=ras36ne21MnAZAJ6-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A667"
     },
