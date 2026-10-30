@@ -1,16 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Contact = () => {
   const contactInfo = [
     {
       title: "Email",
-      value: "steadydrums14@gmail.com",
+      value: "steadfastness.df@gmail.com",
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>,
       color: "from-[#6366f1] to-[#a855f7]"
     },
     {
       title: "Phone",
-      value: "+234 9150349342",
+      value: "+234 915 034 9342",
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>,
       color: "from-[#3b82f6] to-[#6366f1]"
     },
@@ -21,6 +21,30 @@ const Contact = () => {
       color: "from-[#8b5cf6] to-[#ec4899]"
     }
   ];
+
+    const WHATSAPP_NUMBER = "2349150349342"; // digits only, no "+" or spaces
+
+const [form, setForm] = useState({ name: "", email: "", message: "" });
+
+const handleChange = (e) => {
+  const { name, value } = e.target;
+  setForm((prev) => ({ ...prev, [name]: value }));
+};
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  const text =
+    `Hello, my name is ${form.name.trim()}.` +
+    (form.email.trim() ? `\nEmail: ${form.email.trim()}` : "") +
+    `\n\n${form.message.trim()}`;
+
+  window.open(
+    `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`,
+    "_blank",
+    "noopener,noreferrer"
+  );
+  setForm({ name: "", email: "", message: "" });
+};
 
   return (
     <>
@@ -64,36 +88,34 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Right: Modern Form Card - from 5th section.png */}
-            <div className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl shadow-slate-200/60 border border-slate-50 animate-contact-right">
-              <form className="space-y-6">
-                <div className="space-y-2">
-                  <label className="text-slate-700 font-bold text-sm ml-1">Your Name</label>
-                  <input type="text" placeholder="John Doe" className="w-full px-6 py-4 bg-slate-50 border border-transparent rounded-2xl focus:bg-white focus:border-purple-500 outline-none transition-all" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-slate-700 font-bold text-sm ml-1">Your Email</label>
-                  <input type="email" placeholder="john@example.com" className="w-full px-6 py-4 bg-slate-50 border border-transparent rounded-2xl focus:bg-white focus:border-purple-500 outline-none transition-all" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-slate-700 font-bold text-sm ml-1">Your Message</label>
-                  <textarea rows="4" placeholder="Tell me about your project..." className="w-full px-6 py-2 bg-slate-50 border border-transparent rounded-2xl focus:bg-white focus:border-purple-500 outline-none transition-all resize-none"></textarea>
-                </div>
-                   {/* LOGIC UPDATED: Changed button to <a> tag and added Email URL */}
-                    <a 
-                        href="mailto:steadydrums14@gmail.com"
-                        target="blank" 
-                        rel="noreferrer"
-                        className="w-full py-4 bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-bold rounded-2xl shadow-lg shadow-purple-200 flex items-center justify-center gap-3 hover:-translate-y-1 transition-transform text-center"
-                        >
-                        <svg width="18" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                            <line x1="22" x2="11" y1="2" y2="13"></line>
-                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                        </svg>
-                        Send Message
-                    </a>
-              </form>
-            </div>
+            {/* Right: Modern Form Card - sends the message to WhatsApp */}
+<div className="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl shadow-slate-200/60 border border-slate-50 animate-contact-right">
+  <form className="space-y-6" onSubmit={handleSubmit}>
+    <div className="space-y-2">
+      <label className="text-slate-700 font-bold text-sm ml-1">Your Name</label>
+      <input type="text" name="name" value={form.name} onChange={handleChange} required placeholder="John Doe" className="w-full px-6 py-4 bg-slate-50 border border-transparent rounded-2xl focus:bg-white focus:border-purple-500 outline-none transition-all" />
+    </div>
+    <div className="space-y-2">
+      <label className="text-slate-700 font-bold text-sm ml-1">Your Email</label>
+      <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="john@example.com" className="w-full px-6 py-4 bg-slate-50 border border-transparent rounded-2xl focus:bg-white focus:border-purple-500 outline-none transition-all" />
+    </div>
+    <div className="space-y-2">
+      <label className="text-slate-700 font-bold text-sm ml-1">Your Message</label>
+      <textarea rows="4" name="message" value={form.message} onChange={handleChange} required placeholder="Tell me about your project..." className="w-full px-6 py-2 bg-slate-50 border border-transparent rounded-2xl focus:bg-white focus:border-purple-500 outline-none transition-all resize-none"></textarea>
+    </div>
+
+    <button
+      type="submit"
+      className="w-full py-4 bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-bold rounded-2xl shadow-lg shadow-purple-200 flex items-center justify-center gap-3 hover:-translate-y-1 transition-transform text-center cursor-pointer"
+    >
+      <svg width="18" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+        <line x1="22" x2="11" y1="2" y2="13"></line>
+        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+      </svg>
+      Send Message
+    </button>
+  </form>
+</div>
           </div>
         </div>
       </section>
@@ -134,10 +156,10 @@ const Contact = () => {
           {/* LOGIC UPDATED: Added url property and changed container to <a> tag */}
           {[
             { name: "GitHub", url: "https://github.com/Steadfastness-ITS", path: "M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" },
-            { name: "LinkedIn", url: "#", path: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z M2 9h4v12H2z M4 4a2 2 0 1 1 0 4 2 2 0 0 1 0-4z" },
-            { name: "Twitter", url: "https://x.com/steady______?s=21", path: "M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" },
-            { name: "Email", url: "mailto:steadydrums14@gmail.com", path: "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z M22 6l-10 7L2 6" },
-            { name: "WhatsApp", url: "https://wa.me/2349150349342", path: "M21.5 2.5l-4.5 1.1a9.8 9.8 0 1 0 4.8 4.8l-0.3-5.9z M16.03 14.88c-.14-.3-.81-.76-.92-.81-.19-.08-.34-.12-.49.12-.13.23-.53.76-.66.92-.12.16-.24.18-.46.06-.21-.11-.88-.35-1.68-1.11-.62-.55-1.04-1.24-1.16-1.45-.12-.21-.01-.32.09-.43.1-.1.21-.24.32-.37.1-.12.14-.21.21-.35.07-.14.03-.26-.02-.37-.05-.1-.47-1.13-.64-1.55-.17-.4-.34-.35-.47-.36-.12-.01-.26-.01-.4-.01-.14 0-.37.05-.56.26-.19.21-.73.71-.73 1.74 0 1.03.75 2.02.85 2.16.1.14 1.47 2.25 3.56 3.16.5.21.89.34 1.19.44.5.16.96.14 1.31.08.4-.06 1.23-.51 1.41-.99.17-.49.17-.91.12-.99-.05-.09-.19-.14-.4-.25Z" }
+            { name: "LinkedIn", url: "https://www.linkedin.com/in/steadfastness/", path: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z M2 9h4v12H2z M4 4a2 2 0 1 1 0 4 2 2 0 0 1 0-4z" },
+           { name: "X", url: "https://x.com/steadfastnessdf?s=11", path: "M4 4l11.733 16h4.267l-11.733-16z M4 20l6.768-6.768m2.46-2.46l6.772-6.772" },
+            { name: "Email", url: "mailto:steadfastness.df@gmail.com", path: "M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z M22 6l-10 7L2 6" },
+           { name: "WhatsApp", url: "https://wa.me/2349150349342", path: "M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9 M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" }
           ].map((social, i) => (
             <a 
               key={i} 
@@ -152,7 +174,7 @@ const Contact = () => {
             </a>
           ))}
         </div>
-        <p className="text-slate-500 text-sm italic">Available for freelance opportunities and collaborations</p>
+        <p className="text-slate-500 text-sm italic">Available for freelance opportunities, collaborations & contracts</p>
       </div>
     </div>
 
@@ -160,7 +182,7 @@ const Contact = () => {
     <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
       <p>© 2026 Portfolio. All rights reserved.</p>
       <p className="flex items-center gap-2">
-        Made with <span className="text-red-500 text-lg">❤</span> by Divine-Favour Steadfastness Efosa
+        Made by Divine-Favour Steadfastness Efosa
       </p>
     </div>
   </div>

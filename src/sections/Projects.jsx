@@ -25,6 +25,14 @@ const Projects = () => {
       github: "https://github.com/Steadfastness-ITS/Tems-portfolio",
       live: "https://tems-portfolio-website.vercel.app/"
     },
+        {
+      title: "De-Burger Mobile App",
+      description: "De-Burger lets users browse menus, set up profiles, and place orders with real-time tracking & an AI support assistant. Carts, order histories, & user profiles stay saved locally on the device for a seamless experience every time the app reopens.",
+      image: DeBurgerImage,
+      tags: ["React Native", "TypeScript","JavaScript","TailwindCSS"],
+      github: "https://github.com/Steadfastness-ITS/De-Burger",
+      live: "https://expo.dev/accounts/impacttechhub/projects/De-Burger/builds/e25504c0-bb33-4ec1-8c2c-48096c549fe4"
+    },
     {
       title: "Erudite Responsive Landing Page",
       description: "A high-performance, responsive landing page featuring interactive Framer Motion animations and a fluid, mobile-first design optimized for seamless deployment.",

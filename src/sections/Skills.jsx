@@ -3,12 +3,36 @@ import React from 'react';
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Front-end Development",
+      title: "Frontend Web Development",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
       ),
       color: "bg-blue-500",
       skills: ["React.js", "TypeScript", "Next.js", "Bootstrap", "Tailwind CSS"]
+    },
+    {
+      title: "Backend Web Development",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect><rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect><line x1="6" x2="6.01" y1="6" y2="6"></line><line x1="6" x2="6.01" y1="18" y2="18"></line></svg>
+      ),
+      color: "bg-emerald-500",
+      skills: ["Node.js", "Express.js", "MongoDB", "PostgreSQL", "RESTful APIs"]
+    },
+    {
+      title: "Mobile Frontend Development",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><line x1="12" x2="12.01" y1="18" y2="18"></line></svg>
+      ),
+      color: "bg-cyan-500",
+      skills: ["React Native & Expo", "Flutter (Dart)", "TypeScript", "JavaScript", "Tailwind CSS"]
+    },
+    {
+      title: "Mobile Backend Development",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
+      ),
+      color: "bg-pink-500",
+      skills: ["Node.js", "Prisma", "PostgreSQL", "OAuth", "JSON Web Tokens" ]
     },
     {
       title: "UI/UX Design",

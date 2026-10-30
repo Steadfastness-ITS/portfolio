@@ -3,7 +3,7 @@ import abtImage from './Abt me.png';
 
 const About = () => {
   const stats = [
-    { label: "Years Experience", value: "3.5+" },
+    { label: "Years Experience", value: "4.5+" },
     { label: "Projects Completed", value: "30+" },
     { label: "Happy Clients", value: "15+" },
   ];
