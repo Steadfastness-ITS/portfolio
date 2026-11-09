@@ -19,7 +19,7 @@ const Home = () => {
 
         {/* Title */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-medium text-slate-700 mb-6 animate-slide-up delay-100">
-          Full stack Web & Mobile App Developer
+          Software Developer (Web & App)
         </h2>
 
         {/* Description - Max width restricted for that clean look */}
